@@ -22,7 +22,7 @@ $(function () {
     $('.main_visual .arrows i:last-child').on('click', function () {
         $('.main_slide').slick('slickNext')
     });
-    
+
 
     $('.main_conslide').slick({
         arrows: false,
@@ -53,44 +53,6 @@ $(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    // // main_produt_slide
-    // $('.main_pro_slide').slick({
-    //     arrows: false,
-    //     slidesToShow: 3,
-    //     responsive: [
-    //         {
-    //             breakpoint: 768,
-    //             settings: {
-    //                 slidesToShow: 1,
-    //             }
-    //         }
-    //     ]
-
-    // });
-
-
-    // $('.arrows i:nth-child(1)').on('click', function () {
-    //     $('.main_pro_slide').slick('slickPrev');
-    // });
-
-    // $('.arrows i:nth-child(2)').on('click', function () {
-    //     $('.main_pro_slide').slick('slickNext');
-    // })
-
-
-
-
     // to top button
     $(window).on('scroll', function () {
         var sct = $(window).scrollTop();
@@ -111,6 +73,7 @@ $(function () {
 
 
 
+    //mopen
     $('.mopen').on('click', function () {
         $('.header').toggleClass('on')
     });
@@ -145,6 +108,6 @@ $(function () {
 
 
 
-
+    AOS.init();
 
 })

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/main.css">
 
@@ -76,11 +77,28 @@
                     <i class="xi-angle-right-thin"></i>
                 </div>
                 <ul class="menu_bar">
-                    <li><a href=""><strong><i class="bi bi-basket3"></i>주문하기</strong><span>간편한 결제와 신속한 배달</span></a>
+                    <li>
+                        <a href="">
+                            <strong>
+                                <i class="bi bi-basket3"></i>주문하기
+                            </strong>
+                            <span>간편한 결제와 신속한 배달</span>
+                        </a>
                     </li>
-                    <li><a href=""><strong><i class="bi bi-gift"></i>선물하기</strong><span>본죽으로 전하는 따뜻한 마음</span></a></li>
-                    <li><a href=""><strong><i class="bi bi-truck"></i>단체주문</strong><span>1644-6288 (100개 이상 주문
-                                시)</span></a></li>
+                    <li>
+                        <a href="">
+                            <strong><i class="bi bi-gift"></i>선물하기
+                            </strong>
+                            <span>본죽으로 전하는 따뜻한 마음</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <strong><i class="bi bi-truck"></i>단체주문
+                            </strong>
+                            <span>1644-6288 (100개 이상 주문 시)</span>
+                        </a>
+                    </li>
                 </ul>
             </section>
 
@@ -95,7 +113,7 @@
                             <img src="./img/main_brand01.jpg" alt="">
                         </figure>
                         <div class="main_brand_con_tit">
-                            <strong>브랜드 소개</strong>
+                            <strong class="mz">브랜드 소개</strong>
                             <span>행복과 건강은 기본에서 시작하기에 ‘본’(本)을 지키고 키워가는 죽을 만듭니다.
                                 몸을 채우는 건강한 든든함. 마음을 데우는 따뜻한 온기.
                                 정성을 다하는 삶, 더 나은 하루를 만듭니다.</span>
@@ -110,7 +128,7 @@
             <section class="main_menu">
                 <div class="inner">
                     <div class="text_left">
-                        <strong>메뉴 소개</strong>
+                        <strong class="mz">메뉴 소개</strong>
                         <span>정성을 다하는 삶, 더 나은 하루를 만듭니다.
                             정성과 프리미엄이 담긴 본죽의 메뉴를 만나보세요.</span>
                         <p>- 온라인 주문을 통해서도 주문이 가능합니다.</p>
@@ -119,10 +137,10 @@
                         </div>
                     </div>
                     <div class="img_right">
-                        <figure class="img01">
+                        <figure class="img01" data-aos="fade-left">
                             <img src="./img/main_banner01.png" alt="">
                         </figure>
-                        <figure class="img02">
+                        <figure class="img02" data-aos="fade-left" data-aos-delay="300">
                             <img src="./img/main_banner02.png" alt="">
                         </figure>
                     </div>
@@ -135,14 +153,16 @@
                         <h2 class="mz">속 편한 행복 본죽 매장 찾기</h2>
                         <p class="mz">매장, 포장 &amp; 배달 등 다양한 경로로 본죽을 만나보세요.</p>
                     </div>
-                    <div class="main_stor_con">
-                        <div class="main_stor_con_tit">
-                            <strong>매장 찾기</strong>
+                    <div class="main_store_con">
+                        <div class="main_store_con_tit">
+                            <strong class="mz">매장 찾기</strong>
                             <span>본죽은 전국 곳곳에서 만날 수 있습니다. 편안함이 느껴지는 공간, 고객님과 가장 가까운 본죽 매장을 찾아보세요.</span>
                             <div class="more">
                                 <a href="">자세히 보기<i class="bi bi-plus-lg"></i></a>
                             </div>
+                            <div class="i_store"><i class="bi bi-geo-alt-fill"></i></div>
                         </div>
+
                         <figure>
                             <img src="./img/main_store01.jpg" alt="">
                         </figure>
@@ -188,6 +208,7 @@
         <footer class="footer">
             <div class="footer_top">
                 <div class="inner">
+                    <a href="" class="footer_logo"><img src="./img/logo.png" alt=""></a>
                     <ul>
                         <li><a href="">대표번호 : 1644 - 6288</a></li>
                         <li><a href="">창업문의 : 1668 - 3007</a></li>
@@ -195,10 +216,13 @@
                     <div class="form_box">
                         <form action="" class="form">
                             <select id="f_link">
-                                <option value="">Family Link</option>
-                                <option value="http://naver.com">Naver</option>
-                                <option value="http://daum.net">Daum</option>
-                                <option value="http://google.com">Google</option>
+                                <option value="">FAMILY SITE</option>
+                                <option value="http://naver.com">본아이에프</option>
+                                <option value="http://daum.net">본죽</option>
+                                <option value="http://google.com">본죽&비빔밥</option>
+                                <option value="http://google.com">본도시락</option>
+                                <option value="http://google.com">본설렁탕</option>
+                                <option value="http://google.com">본우리반상</option>
                             </select>
                         </form>
                     </div>
@@ -231,8 +255,13 @@
 
         </footer>
         <!-- footer } -->
+
+        <div class="call mz">
+            <a href="">창업문의 1668 - 3007</a>
+        </div>
+
         <div class="to_top">
-            <i class="xi-angle-up-min"></i>
+            <i class="xi-arrow-up"></i>
         </div>
 
 
@@ -244,6 +273,7 @@
 
 
     <script src="./js/slick.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
