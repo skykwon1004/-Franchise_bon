@@ -50,6 +50,22 @@ $(function () {
 
 
 
+    $('.youtube_slide').slick({
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+    });
+    $('.youtube .arrows i:first-child').on('click', function () {
+        $('.youtube_slide').slick('slickPrev')
+    });
+
+    $('.youtube .arrows i:last-child').on('click', function () {
+        $('.youtube_slide').slick('slickNext')
+    });
+
 
 
 
@@ -108,6 +124,6 @@ $(function () {
 
 
 
-    AOS.init();
+    // AOS.init();
 
 })
