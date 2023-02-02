@@ -1,58 +1,23 @@
-<!DOCTYPE html>
-<html lang="ko">
+<?php
+if (!defined('_INDEX_')) define('_INDEX_', true);
+if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>본죽</title>
+if (G5_IS_MOBILE) {
+    include_once(G5_THEME_MOBILE_PATH.'/index.php');
+    return;
+}
 
-    <link rel="stylesheet" href="./css/default.css">
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/aos.css">
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/main.css">
+if(G5_COMMUNITY_USE === false) {
+    include_once(G5_THEME_SHOP_PATH.'/index.php');
+    return;
+}
 
-    <script src="./js/jquery-1.12.4.min.js"></script>
-</head>
-
-<body>
-    <div class="Wrap">
-
-        <!-- { header -->
-        <header class="header">
-            <div class="header_top">
-                <ul class="login">
-                    <li><a href="">로그인</a></li>
-                    <li><a href="">회원가입</a></li>
-                    <li><a href="">가맹문의</a></li>
-                </ul>
-            </div>
-            <h1>
-                <a href="/">
-                    <img src="./img/logo_h.png" alt="">
-                </a>
-            </h1>
-            <div class="inner">
-                <nav class="gnb">
-                    <ul>
-                        <li><a href="">브랜드소개</a></li>
-                        <li><a href="">메뉴소개</a></li>
-                        <li><a href="">매장찾기</a></li>
-                        <li><a href="">이벤트</a></li>
-                        <li><a href="">주문하기</a></li>
-                        <li><a href="">창업</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- header } -->
+include_once(G5_THEME_PATH.'/head.php');
+?>
 
 
-
-        <!-- { main -->
-        <main>
+<!-- { main -->
+    <main>
             <section class="main_visual">
                 <div class="main_slide">
                     <div class="main_itm main_itm01">
@@ -110,7 +75,7 @@
                     </div>
                     <div class="main_brand_con">
                         <figure>
-                            <img src="./img/main_brand01.jpg" alt="">
+                            <img src="<?= G5_THEME_URL ?>/img/main_brand01.jpg" alt="">
                         </figure>
                         <div class="main_brand_con_tit">
                             <strong class="mz">브랜드 소개</strong>
@@ -138,10 +103,10 @@
                     </div>
                     <div class="img_right">
                         <figure class="img01" data-aos="fade-left">
-                            <img src="./img/main_banner01.png" alt="">
+                            <img src="<?= G5_THEME_URL ?>/img/main_banner01.png" alt="">
                         </figure>
                         <figure class="img02" data-aos="fade-left" data-aos-delay="300">
-                            <img src="./img/main_banner02.png" alt="">
+                            <img src="<?= G5_THEME_URL ?>/img/main_banner02.png" alt="">
                         </figure>
                     </div>
                 </div>
@@ -164,7 +129,7 @@
                         </div>
 
                         <figure>
-                            <img src="./img/main_store01.jpg" alt="">
+                            <img src="<?= G5_THEME_URL ?>/img/main_store01.jpg" alt="">
                         </figure>
                     </div>
                 </div>
@@ -204,81 +169,12 @@
         <!--  main } -->
 
 
-        <!-- { footer -->
-        <footer class="footer">
-            <div class="footer_top">
-                <div class="inner">
-                    <a href="" class="footer_logo"><img src="./img/logo.png" alt=""></a>
-                    <ul>
-                        <li><a href="">대표번호 : 1644 - 6288</a></li>
-                        <li><a href="">창업문의 : 1668 - 3007</a></li>
-                    </ul>
-                    <div class="form_box">
-                        <form action="" class="form">
-                            <select id="f_link">
-                                <option value="">FAMILY SITE</option>
-                                <option value="http://naver.com">본아이에프</option>
-                                <option value="http://daum.net">본죽</option>
-                                <option value="http://google.com">본죽&비빔밥</option>
-                                <option value="http://google.com">본도시락</option>
-                                <option value="http://google.com">본설렁탕</option>
-                                <option value="http://google.com">본우리반상</option>
-                            </select>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_bottom">
-                <div class="inner">
-                    <ul class="footer_list01">
-                        <li><a href="">회사소개</a></li>
-                        <li><a href="">이용약관</a></li>
-                        <li><a href="">개인정보처리방침</a></li>
-                        <li><a href="">이메일</a></li>
-                        <li><a href="">무단수집거부</a></li>
-                        <li><a href="">법적고지</a></li>
-                        <li><a href="">협력업체 모집</a></li>
-                        <li><a href="">고객센터</a></li>
-                    </ul>
-                    <ul class="footer_list02">
-                        <li>본아이에프(주)</li>
-                        <li>서울특별시 영등포구 선유로 165 (양평동3가, 와이피센터) 6층</li>
-                        <li>대표자명: 이진희</li>
-                        <li>사업자등록번호 101-86-07256</li>
-                        <li>통신판매신고번호:2019-서울영등포-1230호</li>
-                    </ul>
-                    <div class="copy">
-                        COPYRIGHT 2018 BONIF CO. LTD. ALL RIGHTS RESERVED.
-                    </div>
-                </div>
-            </div>
-
-        </footer>
-        <!-- footer } -->
-
-        <div class="call mz">
-            <a href="">창업문의 1668 - 3007</a>
-        </div>
-
-        <div class="to_top">
-            <i class="xi-arrow-up"></i>
-        </div>
 
 
-        <button class="mopen">
-            <i class="xi-bars"></i>
-        </button>
-
-    </div>
-
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/aos.js"></script>
-    <script src="./js/main.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
-</body>
 
 
-</html>
+
+
+
+<?php
+include_once(G5_THEME_PATH.'/tail.php');
