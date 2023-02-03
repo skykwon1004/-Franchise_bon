@@ -15,7 +15,7 @@ if (!isset($g5['title'])) {
 
 $g5['title'] = strip_tags($g5['title']);
 // $g5_head_title = strip_tags($g5_head_title);
-$g5_head_title = 'AGMG - 글로벌 비지니스 플랫폼';
+$g5_head_title = '본죽';
 
 // 현재 접속자
 // 게시판 제목에 ' 포함되면 오류 발생
@@ -73,7 +73,7 @@ include G5_THEME_PATH . '/doc/assets.php';
     <meta name="twitter:image" content="<?= G5_THEME_URL ?>/img/logo.png">
     <meta name="twitter:domain" content="<?= $as_company ?>">
 
-    <link rel="shortcut icon" href="<?= G5_THEME_URL ?>/img/favicon.png">
+    <link rel="shortcut icon" href="<?= G5_THEME_URL ?>/img/favicon.ico">
     <link rel="canonical" href="<?= $as_url ?>">
 
 
